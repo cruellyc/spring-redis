@@ -16,7 +16,13 @@ import com.redis.services.IMember;
 import com.redis.services.RedisGenerator;
 
 /**
- *
+ * spring-data-redis的序列化类有下面这几个:
+ * GenericToStringSerializer: 可以将任何对象泛化为字符串并序列化
+ * Jackson2JsonRedisSerializer: 跟JacksonJsonRedisSerializer实际上是一样的
+ * JacksonJsonRedisSerializer: 序列化object对象为json字符串
+ * JdkSerializationRedisSerializer: 序列化java对象
+ * StringRedisSerializer: 简单的字符串序列化
+ * 
  * @author liyc
  * @date 2017年8月14日 下午2:34:14
  */
